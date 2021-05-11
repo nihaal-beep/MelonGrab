@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://nuke.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 31.5353, 50.1312 )
+
+[node name="Nuke" type="RigidBody2D" groups=[
+"nukes",
+]]
+mass = 2.55102
+gravity_scale = 8.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 25.3984, -1.5874 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -3.96849, -0.793686 )
+scale = Vector2( 0.586381, 0.557436 )
+texture = ExtResource( 1 )
